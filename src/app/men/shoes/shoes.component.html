@@ -1,0 +1,6 @@
+<form [formGroup]="customerForm">
+    <input type="text" placeholder="Enter Name" name="cName" id="cName" formControlName="cName">
+    <input type="text" placeholder="Enter Product Name" name="pName" id="pName" formControlName="pName">
+    <input type="text" placeholder="Enter Price" name="pPrice" id="pPrice" formControlName="pPrice">
+    <button type="submit" (click)="submitCustomerForm()">Submit</button>
+</form>

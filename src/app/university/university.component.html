@@ -1,0 +1,45 @@
+<p>university works!</p>
+<button type="submit" (click)="studentDetails()">Details</button>
+
+{{studentFirstName}}
+
+<button type="submit"(click)="studentFirstData()">FirstName</button>
+
+<input type="text" name="studentFirstName" id="studentFirstName"  [(ngModel)]="studentFirstName">
+
+
+
+{{studentStatus}}
+
+
+
+<input type="text" [(ngModel)]="studentName">
+<h2>{{studentName}}</h2>
+
+<div *ngIf="studentStatus">
+    <table style="width: 100%">
+        <tr>
+            <th>Id</th>
+            <th>Student Name</th>
+            <th>Student Age</th>
+            <th>Student Salary</th>
+            <th>Status</th>
+            <th>Age Status</th>
+            
+        </tr>
+        <tr *ngFor="let x of updatedEmployees">
+            <td>{{x.id}}</td>
+            <td>{{x.employee_name}}</td>
+            <td>{{x.employee_age}}</td>
+            <td>{{x.employee_salary}}</td>
+            <td>{{x.status}}</td>
+            <td>{{x.age_status}}</td>
+            
+        </tr>
+    </table>
+</div>
+
+
+
+
+

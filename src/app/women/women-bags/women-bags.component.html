@@ -1,0 +1,25 @@
+<!-- <p>women-bags works!</p> -->
+<app-bags-filter></app-bags-filter>
+<app-bags-results></app-bags-results>
+
+
+<form [formGroup]="womenBags">
+
+    <input type="text" placeholder="enter userName" name="userName" id="userName"formControlName="userName" >
+    <input type="password" placeholder="enter Password"   name="password" id="password" formControlName="password">
+   
+    <select name="role" id="role" formControlName="role">
+        <option value="select your role">Select Role</option>
+        <option value="Admin">Admin</option>
+        <option value="Employee">Emp</option>
+        <option value="Manager">Manager</option>
+
+
+
+
+    </select>
+
+
+    <button type="submit"(click)="submitWomenBags()">Women-Bags</button>
+    
+</form>

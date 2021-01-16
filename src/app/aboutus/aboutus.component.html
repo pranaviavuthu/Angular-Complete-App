@@ -1,0 +1,30 @@
+
+
+
+<p>Please contact to
+    Email: "abc@XXX.com"
+    contact:"1234567890"
+</p>
+
+
+<form [formGroup]="aboutUs">
+    <input type="text" name="formId" id="formId" formControlName="formId">*
+    <!-- valid ={{aboutUs.controls.formId.valid}}
+    required={{aboutUs.controls.formId.errors?.required}} -->
+            true && true
+    <div *ngIf="!aboutUs.controls.formId.valid && aboutUs.controls.formId.errors?.required">
+        <p>This value is required</p>
+    </div>
+    <input type="text" name="formName" id="formName" formControlName="formName">
+    <div *ngIf="!aboutUs.controls.formName.valid && aboutUs.controls.formName.errors?.hasNumber">
+        <p>This field should not contain number</p>
+    </div>
+    <input type="text" name="formEmail" id="formEmail" formControlName="formEmail">
+
+
+<button  type="submit"(click)="updateForm()">Update</button>
+<!-- [disabled]="!aboutUs.valid" -->
+
+</form>
+
+

@@ -1,0 +1,30 @@
+
+
+<p>user1- "userName": "pranavi@91","password": "test@09871","role":"admin"</p>
+<p>user2-  "userName": "tom@01","password": "test@0123","role":"employee"</p>
+<p>user3-"userName": "jerry@6","password": "test@34567","role":"manager"</p>
+
+<form [formGroup]="signUpForm">
+
+    
+    <input type="text" name="userName" id="userName" formControlName="userName">
+    
+    <input type="text" name="password" id="password" formControlName="password">
+    <!-- <input type="text" name="role" id="role" formControlName="role"> -->
+    <select name="role" id="role" formControlName="role">
+        <option value="admin">Admin</option>
+        <option value="manager">Manager</option>
+        <option value="employee">Employee</option>
+    </select>
+    
+
+
+
+    <!-- calling signup button with submitSignUpDetails function -->
+    <button type="submit"(click)="submitSignUpDetails()">Sign Up</button>   
+
+    
+
+
+
+</form>

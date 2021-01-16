@@ -1,0 +1,27 @@
+
+<div *ngIf="showHeader">
+    <ul>
+        <li> <a (click)="navigateToMen()">Men's</a></li>
+        <li> <a (click)="navigateToWomen()">Women's</a></li>
+        <li> <a (click)="navigateToKids()">Kids</a></li>
+        <li> <a (click)="navigateToAboutUs()">About Us</a></li>
+        <li><a (click)="navigateToEmployees()">Employees</a></li>
+        <li><a (click)="navigateToCustomers()">Customers</a></li>
+        <li><a (click)="navigateToUniversity()">University</a></li>
+
+
+        <li><a>Logged in as : {{userName}}</a></li>
+        <li><a (click)="navigateToSignUpForm()">SignUp</a></li>
+
+
+    </ul>
+</div>
+
+
+
+<!-- <ul>
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul> -->

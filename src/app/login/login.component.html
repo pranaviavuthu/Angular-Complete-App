@@ -1,0 +1,19 @@
+
+<p>{{data}}</p>
+<p>login works!</p>
+<p>user1 - userName": "pranavi8","password": "test@1234","role": "admin"</p>
+<p>user2- "userName": "ram@9","password": "test@5678","role": "manager"</p>
+<p>  user3-"userName": "pranavi@9","password": "test@0987","role":"employee"</p>
+
+<form [formGroup]="loginForm">
+
+    <input type="text" name="userName" id="userName" formControlName="userName">
+    <input type="password" name="password" id="password" formControlName="password">
+
+
+
+    <button type="submit"(click)="submitLoginInfo()">Login</button>
+
+
+
+</form>

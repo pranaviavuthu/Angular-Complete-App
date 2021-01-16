@@ -1,0 +1,30 @@
+<button type="submit" (click)="employeeDetails()">Submit</button>
+
+{{employeeStatus}}
+
+
+<div *ngIf="employeeStatus">
+
+    <table style="width: 100%">
+        <tr>
+            <th>Id</th>
+            <th>Employee Name</th>
+            <th>Employee Salary</th>
+            <th>Employee Age</th>
+
+        </tr>
+        <tr *ngFor="let contact of employeeContact.data">
+            <td>{{contact.id}}</td>
+            <td>{{contact.employee_name}}</td>
+            <td>{{contact.employee_salary}}</td>
+            <td>{{contact.employee_age}}</td>
+
+        </tr>
+        
+    </table>
+
+
+
+</div>
+
+<button (click)="testId()">Test</button>
